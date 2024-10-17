@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/config.css">
+
+    <link rel="stylesheet" href="css/oldIndex.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/md.css">
+    <link rel="stylesheet" href="css/lg.css">
+    <link rel="stylesheet" href="css/xlg.css">
+
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- <link rel="stylesheet" href="css/modal.css"> -->
+    <link rel="icon" href="img/globo-neutra.svg">
+    <title>Neutra+</title>
+</head>
+
+<body>
+    <header id="page_header" class="global__limit">
+        <div class="header__container hidden2">
+            <a href="#home">
+                <img id="logo" src="img/Preto.svg" alt="Logo da Neutra mais" >
+            </a>
+
+            <button id="toggle-menu-button" class="global__icon-button">
+                <div class="global__hamburguer">
+                    <div class="global__hamburguer-line"></div>
+                </div>
+            </button>
+
+            <nav id="nav-bar">
+                <a href="#home">Início</a>
+                <a href="#benefits">Benefícios</a>
+                <a href="#video">Sobre</a>
+                <a href="#faq">FAQ</a>
+                <a href="#footer-page">Contatos</a>
+                <a href= "https://docs.google.com/forms/d/e/1FAIpQLSft4ZGYY6eWGp1txS5XYAQaodiNz2G3aWGhHuZtzLPvpmOUlg/viewform" target="_blank"id="button-header" class="button__modal-mobile" class="tdr">Inscreva-se</a>
+
+                <!-- <select onchange="idioma(this)" id="select_language">
+                    <option value="pt-br" selected="selected">Pt - Br</option>
+                    <option value="en-us">English (US)</option>
+                </select> -->
+            </nav>
+
+            <nav id="nav-bar-desktop" >
+                <a href="#home" class="hidden2">Início</a>
+                <a href="#benefits" class="hidden2">Benefícios</a>
+                <a href="#video" class="hidden2">Sobre</a>
+                <a href="#faq" class="hidden2">FAQ</a>
+                <a href="#footer-page" class="hidden2">Contatos</a>
+                <a href= "https://docs.google.com/forms/d/e/1FAIpQLSft4ZGYY6eWGp1txS5XYAQaodiNz2G3aWGhHuZtzLPvpmOUlg/viewform" target="_blank" id="button-header" class="button__modal-desktop" class="tdr">Inscreva-se</a>
+
+                <!-- <select onchange="idioma(this)" class="hidden2" id="select_language">
+                    <option value="pt-br" selected="selected">Pt - Br</option>
+                    <option value="en-us">English (US)</option>
+                </select> -->
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="content">
+
+        <!-- Seção Inicio -->
+        <section id="home" class="global__limit">
+            <div id="home-main" class="hidden">
+                <div id="brilho" class="hidden"></div>
+                <div id="home-txt" class="hidden">
+                    <div class="chipButton">
+                        <p> + neutra + rede </p>
+                    </div>
+                    <h2 class="tdr">Compartilhando novos horizontes</h2>
+                    <p id="desc-home-txt">Neutra + <span class="tdr">ajuda a compartilhar e expandir sua rede de forma
+                            mais simples e segura, conectando você a todos os seus clientes de maneira direta, sem se
+                            importar onde estejam.</span></p>
+                    <a href= "https://docs.google.com/forms/d/e/1FAIpQLSft4ZGYY6eWGp1txS5XYAQaodiNz2G3aWGhHuZtzLPvpmOUlg/viewform" target="_blank" id="button-home" class="tdr">Reserve já sua inscrição</a>
+                </div>
+                <div id="home-content" class="hidden">
+                    <img id="home-img" src="img/note-book.svg" alt="">
+                </div>
+            </div>
+            <footer id="more-info">
+                <a href="#benefits" class="hidden3">
+                    <span class="tdr"></span>
+                    <img src="img/maskedIcon3.svg" alt="">
+                </a>
+            </footer>
+        </section>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Modal da reserva 
+
+        <form class="modal" onSubmit="return(checkEmail())">
+            <div id="modal__close-area">
+            </div>
+            <main class="modal__modal-main">
+                <div id="modal__header">
+                    <h1>Garanta já sua vaga!</h1>
+                    <p id='close-button'>X</p>
+                </div>
+
+                <div id="modal__inputs">
+                    <div id="modal__inputs-left">
+                        <label id="label__name" for="modal__input-name">Nome Completo*</label>
+                        <input type="text" name="name" id="modal__input-name" placeholder="Joaquim Farias" onblur="success()" >
+                        <label id="label__email" for="modal__input-email" >E-mail*</label>
+                        <input type="email" name="email" id="modal__input-email" placeholder="joaquimfarias@email.com"  onblur="checkEmail()" onfocus="redefineMsg()" onblur="success()" >
+                        <span id="error-email"></span>
+                        <label id="label__tel" for="modal__input-tel">Telefone*</label>
+                        <input type="tel" name="tel" id="modal__input-tel" placeholder="(88)9 9349-8506" onblur="success()"  >
+                    </div>
+                    <div id="modal__inputs-right">
+                        <label for="modal__input-sugestion">Sugestões ou dúvidas?</label>
+                        <textarea id="modal__input-sugestion" rows="8" cols="70"
+                            placeholder="Deixe aqui seu comentário ou sugestão"></textarea>
+                    </div>
+                </div>
+
+                <div id="modal__inputs-checkBox">
+                    <div class="modal__inputs-checkBox--line">
+                        <input type="checkbox" name="accept_terms" id="modal__accept_terms" required>
+                        <label for="modal__accept_terms">Aceito os Termos de uso e politica de privacidade*</label>
+                    </div>
+
+                    <div class="modal__inputs-checkBox--line">
+                        <input type="checkbox" name="accept_terms" id="modal__accept_news">
+                        <label for="modal__accept_news">Concordo em receber novidades pelos canais informados</label>
+                    </div>
+                </div>
+
+                <div id="modal__button-box" onclick="success()">
+                    <button id="modal__button" onclick="success()">Confirmar</button>
+                </div>
+            </main>
+        </form> -->
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Seção beneficios -->
+        <section id="benefits" class="global__limit">
+
+            <!-- <img id="wave-benefits" src="img/wave.svg" alt=""> -->
+            <div class="hidden">
+                <header id="header-benefits">
+                    <div>
+                        <div class="chipButton">
+                            <p>Benefícios</p>
+                        </div>
+                    </div>
+                    
+                    <h1 id="title-header-benefits" class="title__header_sections-mobile" class="tdr">O que esperar da
+                        Neutra+</h1>
+                </header>
+                <main class="content-benefits">
+                    <div class="card-benefits hidden" id="card-benefits1">
+                        <h2>98%</h2>
+                        <div class="desc-benefits">
+                            <span class="tdr">Dos nossos provedores diminuiram sua rede ociosa.</span>
+                        </div>
+                    </div>
+                    <div class="card-benefits hidden" id="card-benefits2">
+                        <h2 class="tdr">+Alcance</h2>
+                        <div class="desc-benefits">
+                            <span class="tdr">De clientes em todo o Brasil com menos investimento em
+                                infraestrutura</span>
+                        </div>
+                    </div>
+                    <div class="card-benefits hidden" id="card-benefits3">
+                        <h2>50% <span class="tdr">mais</span></h2>
+                        <div class="desc-benefits">
+                            <span class="tdr">Diminuição dos custos com a manutenção da rede.</span>
+                        </div>
+                    </div>
+                    <div class="card-benefits hidden" id="card-benefits4">
+                        <h2 class="tdr">+Retorno</h2>
+                        <div class="desc-benefits">
+                            <span class="tdr">Maior retorno com a infraestrutura ociosa</span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+        </section>
+
+        <!-- Seção Video e Descrição -->
+        <section id="video" class="hidden">
+            <div>
+                <div class="chipButton">
+                    <p>Sobre</p>
+                </div>
+            </div>
+            <h1 id="h1-video" class="title__header_sections-mobile" class="tdr">
+                Conheça a Neutra+
+            </h1>
+            <iframe id="video-player" height="max-height" src="https://www.youtube.com/embed/xjskSuRH2JA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section id="description">
+            <div id="brilho2" class="hidden"></div>
+            <div id="brilho3" class="hidden"></div>
+            <div class="hidden">
+                <div id="content__description-border">
+                    <main id="content-description">
+                        <div class="chipButton">
+                            <p>Sobre</p>
+                        </div>
+                        <h1 id="h1-description" class="tdr">O que é rede neutra?</h1>
+                        <p id="p-description" class="tdr">
+                            <span class="tdr">
+                                Uma rede neutra é uma rede fixa ou móvel que pode atender a vários provedores de
+                                Internet ao mesmo tempo. Sua estrutura é semelhante ao compartilhamento de torres de
+                                telefonia
+                                móvel, prática adotada no Brasil e regulamentada pela Anatel</span> (<span
+                                class="tdr">Agência
+                                Nacional de Telecomunicações</span>) por meio da Resolução 683/2017. Mostrando assim que sua
+                            principal vantagem é reduzir o custo de implantação de projetos de rede em novas áreas.
+                            De fato, várias empresas do setor de telecomunicações podem alugar e usar a mesma infraestrutura
+                            de
+                            rede – como fibra ótica, cabos metálicos, redes móveis – chamadas de redes neutras.
+                        </p>
+                        <button id="button-description">
+                            <img src="img/maskedIcon.svg">
+                            <span class="tdr">Reserve já sua
+                                inscrição
+                            </span>
+                            <img src="img/maskedIcon2.svg">
+                        </button>
+                    </main>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção FAQ -->
+        <section id="faq">
+            <div class="hidden">
+                <h1 id="h1-faq" class="title__header_sections-mobile" class="tdr">Dúvidas frequentes (FAQ)</h1>
+                <main class="content-faq hidden">
+                    <div class="card-faq">
+                        <h2 class="tdr">Como entro na fila de espera do Neutra+ ?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">Ao clicar no botão de</span>
+                                <a class="tdr" href="#home">Reserve já sua
+                                    inscrição
+                                </a>
+                                <span class="tdr">preencha os dados solicitados e você já vai garantir sua
+                                    vaga na
+                                    plataforma Neutra+.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <h2>Como faço para aprender mais sobre o conceito de Rede Neutra?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">
+                                    Consulte o vídeo na aba
+                                </span>
+                                <a href="#video">
+                                    Sobre
+                                </a>
+                                <span class="tdr">para saber mais.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <h2>Quais os benefícios a Neutra+ ?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">Consulte a aba</span>
+                                <a href="#benefits">Benefícios</a>
+                                <span class="tdr">para saber mais.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <h2>Qual problema a Neutra+ busca resolver e qual a solução?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">Consulte o vídeo na aba</span>
+                                <a href="#video">Sobre</a>
+                                <span class="tdr">para saber mais.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <h2>Como faço pra ver uma prévia do funcionamento da Neutra+?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">Consulte o vídeo na aba</span>
+                                <a href="#video">Sobre</a>
+                                <span class="tdr">para saber mais.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-faq">
+                        <h2>Como faço para contatar a Neutra+?</h2>
+                        <div class="desc-faq">
+                            <span>
+                                <span class="tdr">Consulte o vídeo na aba</span>
+                                <a href="#footer-page">Contatos</a>
+                                <span class="tdr">para saber mais.</span>
+                            </span>
+                        </div>
+                </main>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-page" id="footer-page">
+        <div class="content-footer">
+            <a href="#home"><img src="img/Logo-Dark.svg" alt="logo marca da página Neutra mais" id="logo-footer"></a>
+            <section class="navigation-footer">
+                <a href="#home"><img src="img/Logo-Dark.svg" alt="logo marca" id="logo_footer--mobile"></a>
+                <nav>
+                    <ul>
+                        <h2 class="tdr">Início</h2>
+                        <li class="tdr">Sobre nós</li>
+                        <li class="tdr">Dúvidas</li>
+                        <li class="tdr">Termos de uso</li>
+                    </ul>
+                    <ul>
+                        <h2 class="tdr">Contatos</h2>
+                        <li>
+                            <img style="width:32px ;height:32px" class="icon-collor" src="img/phone (2).svg" alt="">
+                            +55 (88)9 9349-8506
+                        </li>
+                        <li>
+                            <a target="_blank" href="mailto:contato@bmo.dev.br">
+                                <img style="width:32px ;height:32px" class="icon-collor" src="img/EnvelopeSimple.svg"
+                                    alt="" />
+                                E-mail
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/bmo.dev/">
+                                <img style="width:32px ;height:32px" class="icon-collor" src="img/instagram-logo.svg"
+                                    alt="">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/bmodev/">
+                                <img style="width:32px ;height:32px" class="icon-collor" src="img/linkedin-logo.svg"
+                                    alt="">
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h2 class="tdr">Sede</h2>
+                        <li>Av. Cel. Araujo Lima,<br> 1348, Centro, Russas - CE</li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <section id="rodape">
+            <a href="https://bmo.dev.br"><span class="tdr">Desenvolvido por:</span></a> <a href="https://bmo.dev.br"><img src="img/RGB_logo_white_blue 1.svg" alt=""></a></span>
+            <a href="https://bmo.dev.br"><span>® 2023 BMO - Be More. Todos os direitos reservados.</span></a>
+        </section>
+    </footer>
+    <script src="js/translate/traducao.min.js"></script>
+    <script src="js/translate/translate.js"></script>
+    <script src="js/modals/modal.js"></script>
+    <script src="js/menu/toggleMenu.js"></script>
+    <script src="js/animations/animations.js"></script>
+</body>
+
+</html>

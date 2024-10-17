@@ -1,0 +1,116 @@
+:root {
+  --bg-txt-primary-color: #0d1117;
+  --bg-primarys-color-87: #040d21de;
+  --bg-primarys-color-60: rgba(13, 17, 23, 0.6);
+  --bg-primarys-color-12: rgba(13, 17, 23, 0.12);
+
+  --bg-txt-secondary-color: #161b22d9;
+  
+  --bg-txt-primary-color-dark: #040811;
+  --bg--txt-secondary-color-dark: rgba(4, 35, 120, 1);
+  --bg--txt-secondary-color-dark-hover: rgb(31, 56, 124);
+
+  --bg-surface-color-dark: #010409;
+
+  --bg-surface-color: #F6F8FA;
+  --bg-surface-color-87: rgba(246, 248, 250, 0.87);
+  --bg-surface-color-60: rgba(246, 248, 250, 0.6);
+  --bg-surface-color-12: rgba(246, 248, 250, 0.12);
+
+  --txt-primary-color: #FFFFFF;
+  --txt-primary-color-87: rgba(255, 255, 255, 0.87);
+  --txt-primary-color-60: rgba(255, 255, 255, 0.6);
+  --txt-primary-color-12: rgba(255, 255, 255, 0.12);
+
+  --txt-muted-color-2: #98A6B3;
+
+  --txt-muted-color: #8D9DBF;
+  --txt-muted-color-87: rgba(129, 147, 178, 0.87);
+  --txt-muted-color-60: rgba(129, 147, 178, 0.6);
+  --txt-muted-color-12: rgba(129, 147, 178, 0.12);
+  
+  --chip-color: rgb(21, 29, 45);
+
+  --text-blue: #0741e0;
+  --text-grey: #525860;
+
+  --border-default: rgba(255, 255, 255, 0.12);
+
+  --transparent: rgba(0, 0, 0, 0);
+
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xlg: 1200px;
+}
+
+/* ---ANIMAÇÕES--- */
+
+@keyframes animationMoreInfo {
+  0%{bottom: 0;}
+  25%{bottom: 19px;}
+  50%{bottom: 0px;}
+  75%{bottom: 19px;}
+  100%{bottom: 0px;}
+
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-60%);
+  transition: all 0.7s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0px);
+}
+
+.hidden2{
+  opacity: 0;
+  transform: translateY(-70%);
+  transition: all 1.3s;
+}
+
+.show2{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.hidden3{
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(-70%);
+  transition: all 0.5s;
+  transition-delay: 1s;
+}
+
+.show3{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0px);
+}
+
+/* -----FONTES---- */
+
+@font-face {
+  font-family: 'Switzer-Regular';
+  src: url('../fontes/Switzer-Regular.woff2') format('woff2'),
+    url('../fontes/Switzer-Regular.woff') format('woff'),
+    url('../fontes/Switzer-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer-Regular';
+  src: url('../fontes/Switzer-Regular.woff2') format('woff2'),
+    url('../fontes/Switzer-Regular.woff') format('woff'),
+    url('../fontes/Switzer-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}

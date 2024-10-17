@@ -1,0 +1,88 @@
+function idioma(sel) {
+    switch (sel.value) {
+        case "pt-br":
+            conteudo = {
+                "Desenvolvido por:" : "Desenvolvido por:",
+                "Sede" : "Sede",
+                "Alcance": "+Alcance",
+                "Contatos":"Contatos",
+                "Dúvidas":"Dúvidas",
+                "mais": "mais",
+                "Início":"Início",
+                "Benefícios": "Benefícios",
+                "Sobre":"Sobre",
+                "Funcionamento": "Funcionamento",
+                "Descrição":"Descrição",
+                "FAQ": "FAQ",
+                "Compartilhando novos horizontes": "Compartilhando novos horizontes",
+                "ajuda a compartilhar e expandir sua rede de forma mais simples e segura, conectando você a todos os seus clientes de maneira direta, sem se importar onde estejam":"ajuda a compartilhar e expandir sua rede de forma mais simples e segura, conectando você a todos os seus clientes de maneira direta, sem se importar onde estejam",
+                "Reserve já sua inscrição": "Reserve já sua inscrição",
+                "Saiba Mais": "Saiba Mais",
+                "O que esperar da Neutra+":"O que esperar da Neutra+",
+                "Dos nossos provedores diminuiram sua rede ociosa.": "Dos nossos provedores diminuiram sua rede ociosa.",
+                "De clientes em todo o Brasil com menos investimento em infraestrutura":"De clientes em todo o Brasil com menos investimento em infraestrutura",
+                "Diminuição dos custos com a manutenção da rede.": "Diminuição dos custos com a manutenção da rede.",
+                "Retorno":"+Retorno",
+                "Maior retorno com a infraestrutura ociosa":"Maior retorno com a infraestrutura ociosa",
+                "O que é a Neutra": " O que é a Neutra+?",
+                "Uma rede neutra é uma rede fixa ou móvel que pode atender a vários provedores de Internet ao mesmo tempo. Sua estrutura é semelhante ao compartilhamento de torres de telefonia móvel, prática adotada no Brasil e regulamentada pela Anatel":"Uma rede neutra é uma rede fixa ou móvel que pode atender a vários provedores de Internet ao mesmo tempo. Sua estrutura é semelhante ao compartilhamento de torres de telefonia móvel, prática adotada no Brasil e regulamentada pela Anatel",
+                "Agência Nacional de Telecomunicações":"Uma rede neutra é uma rede fixa ou móvel que pode atender a vários provedores de Internet ao mesmo tempo. Sua estrutura é semelhante ao compartilhamento de torres de telefonia móvel, prática adotada no Brasil e regulamentada pela Anatel (Agência Nacional de Telecomunicações) por meio da Resolução 683/2017. Mostrando assim que sua principal vantagem é reduzir o custo de implantação de projetos de rede em novas áreas. De fato, várias empresas do setor de telecomunicações podem alugar e usar a mesma infraestrutura de rede – como fibra ótica, cabos metálicos, redes móveis – chamadas de redes neutras.",
+                "O que é rede neutra": "O que é rede neutra?",
+                "Reserve já sua inscrição": "Reserve já sua inscrição",
+                "Dúvidas frequentes":"Dúvidas frequentes (FAQ)",
+                "Como entro na fila de espera do Neutra":"Como entro na fila de espera do Neutra+ ?",
+                "Ao clicar no botão de":"Ao clicar no botão de",
+                "preencha os dados solicitados e":"preencha os dados solicitados e você já vai garantir sua vaga na plataforma Neutra+.",
+                "Consulte o vídeo na aba":"Consulte o vídeo na aba",
+                "Consulte a aba":"Consulte a aba",
+                "para saber mais.":"para saber mais.",
+                "Termos de uso":"Termos de uso",
+                "Todos os direitos reservados." : "Todos os direitos reservados.",
+  
+            };
+            break;
+        case "en-us":
+            conteudo = {
+                "Desenvolvido por:" : "Developed by",
+                "Sede" : "Headquarters",
+                "Contatos":"Contacts",
+                "mais": "more",
+                "Início": "Home",
+                "Benefícios":"benefits",
+                "Sobre": "About",
+                "Funcionamento": "working",
+                "Descrição":"Description",
+                "FAQ": "FAQ",
+                "Termos de uso":"Terms of use",
+                "Compartilhando novos horizontes":"Findout new horizons",
+                "ajuda a compartilhar e expandir sua rede de forma mais simples e segura, conectando você a todos os seus clientes de maneira direta, sem se importar onde estejam":"helps you share and expand your network more simply and securely, connecting you to all your customers directly, no matter where they are.",
+                "Reserve já sua inscrição": "Book your subscription now",
+                "Saiba Mais": "Learning more",
+                "O que esperar da Neutra+":"What to expect from Neutra+",
+                "Dos nossos provedores diminuiram sua rede ociosa.":"Of our providers have reduced their idle network.",
+                "Alcance": "+Reach",
+                "De clientes em todo o Brasil com menos investimento em infraestrutura": "From customers all over Brazil with less infrastructure investment",
+                "Diminuição dos custos com a manutenção da rede.":"Decreased network maintenance costs.",
+                "Retorno":"+Return",
+                "Maior retorno com a infraestrutura ociosa":"Higher return with idle infrastructure",
+                "O que é a Neutra":"What is Neutra+?",
+                "O que é rede neutra":" What is neutral network?",
+                "Uma rede neutra é uma rede fixa ou móvel que pode atender a vários provedores de Internet ao mesmo tempo. Sua estrutura é semelhante ao compartilhamento de torres de telefonia móvel, prática adotada no Brasil e regulamentada pela Anatel":"A neutral network is a fixed or mobile network that can serve multiple Internet providers at the same time. Its structure is similar to the sharing of mobile phone towers, a practice adopted in Brazil and regulated by Anatel",
+                "Agência Nacional de Telecomunicações":"A neutral network is a fixed or mobile network that can serve multiple Internet providers at the same time. Its structure is similar to the sharing of mobile phone towers, a practice adopted in Brazil and regulated by Anatel (National Telecommunications Agency) through Resolution 683/2017. Thus showing that its main advantage is to reduce the cost of implementing network projects in new areas. In fact, several companies in the telecommunications industry can rent and use the same network infrastructure – such as fiber optics, metallic cables, mobile networks – called neutral networks.",
+                "Reserve já sua inscrição":"Book your subscription now",
+                "Dúvidas":"Doubts",
+                "Dúvidas frequentes":"Frequently asked questions (FAQ)",
+                "Como entro na fila de espera do Neutra":"How do I enter the Neutra+ queue?",
+                "Ao clicar no botão de":"By clicking on the button",
+                "preencha os dados solicitados e você":"fill in the requested data and you will already guarantee your spot on the Neutra+ platform.",
+                "Consulte o vídeo na aba":"See the video in the tab",
+                "Consulte a aba":"See tab",
+                "para saber mais." : "to learn more.",
+                "Todos os direitos reservados." : "All rights reserved.",
+
+
+            };
+            break;
+    }
+    Tradutor(conteudo);
+}

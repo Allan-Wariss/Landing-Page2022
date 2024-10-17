@@ -1,0 +1,7 @@
+@media screen and (min-width: 576px) {
+
+  /* ------------------ global ------------------ */
+  .global__limit {
+    padding: 0 3rem;
+  }
+}
